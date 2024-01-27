@@ -1,9 +1,10 @@
 const express = require("express");
 const connectDB =  require("./config/db");
 const cors = require("cors");
+const books = require("./routes/api/books");
 
 // CONNECINGTO MONGODB
-connectDB();
+// connectDB();
 
 
 
@@ -14,6 +15,8 @@ const app = express();
 app.use(cors());
 // Handle JSON parsing properly
 app.use(express.json())
+// Use the API group instead of multiple paths for multiple routes
+app.use("/api/books", books)
 
 const port = process.env.PORT || 5000;
 app.listen(port, () =>
