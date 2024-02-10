@@ -5,8 +5,8 @@ import './App.css';
 
 import CreateBook from './components/CreateBook';
 import ShowBooklist from './components/ShowBookList';
-import ShowBookDetails from './components/ShowBookDetails';
-import UpdateBookInfo from './components/UpdateBookInfo';
+// import ShowBookDetails from './components/ShowBookDetails';
+// import UpdateBookInfo from './components/UpdateBookInfo';
 
 const App = () => {
   return (
@@ -15,8 +15,8 @@ const App = () => {
         <Routes>
           <Route exact path='/' element={<ShowBooklist />} />
           <Route path='/create-book' element={<CreateBook />} />
-          <Route path='/edit-book' element={<UpdateBookInfo />} />
-          <Route path='/show-book/:id' element={<ShowBookDetails />} />
+          {/* <Route path='/edit-book' element={<UpdateBookInfo />} />
+          <Route path='/show-book/:id' element={<ShowBookDetails />} /> */}
         </Routes>
       </div>
     </Router>

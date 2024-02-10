@@ -36,3 +36,24 @@
     - delete
     - read
     - search
+
+- Add the cretbook component
+    - add axios logic
+    - add basic design
+    - add react hooks
+    - add bootstrap cdn links in public/index.html
+    - add header and footers
+    - create prod build artifacts,install serve module, connect the frontend with backend in server.js
+
+
+
+
+
+
+
+
+
+
+
+
+
